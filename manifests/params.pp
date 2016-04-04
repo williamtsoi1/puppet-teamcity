@@ -52,7 +52,7 @@ class teamcity::params {
       }
     }
     'windows': {
-      $service_run_type    = ['service', 'standalone']
+      $service_providers    = ['service', 'standalone']
     }
     default: {
       fail("'${module_name}' provides no service parameters for '${::operatingsystem}' operating system!")
